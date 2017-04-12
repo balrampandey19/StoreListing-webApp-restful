@@ -9,4 +9,6 @@ app = Flask(__name__)
 #POST /store data:{name:}
 
 @app.route("/store",method=['POST'])
+def create_store:
+    pass
 app.run(port=5000)
