@@ -21,8 +21,8 @@ stores = [
 
 #POST /store data:{name:}
 
-@app.route("/store",method=['POST'])
-def create_store:
+@app.route("/store",methods=['POST'])
+def create_store():
     pass
 
 @app.route("/store<string:name>")
@@ -31,10 +31,10 @@ def get_store(name):
 
 @app.route("/store")
 def get_stores():
-    return jsonify(s{'stores':stores})
+    return jsonify({'stores':stores})
 
-@app.route("/store<string:name>/item",method=['POST'])
-def create_item_in_store:
+@app.route("/store<string:name>/item",methods=['POST'])
+def create_item_in_store():
     pass
 
 @app.route("/store<string:name>/item")
