@@ -52,8 +52,8 @@ def create_item_in_store():
         'price':request_data['price']
         }
         store['items'].append(store_item)
-        return jsonify(store['items'])
-
+        return jsonify(store_item)
+    return jsonify({'message':'Store not found'})
 
 
 @app.route("/store<string:name>/item")
