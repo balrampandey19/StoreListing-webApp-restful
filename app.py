@@ -19,4 +19,9 @@ def get_store(name):
 @app.route("/store")
 def get_store():
     pass
+
+@app.route("/store<string:name>/item",method=['POST'])
+def create_store:
+    pass
+
 app.run(port=5000)
