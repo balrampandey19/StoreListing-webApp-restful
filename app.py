@@ -1,6 +1,19 @@
 from flask import Flask
 
 app = Flask(__name__)
+stores = [
+{
+'name':"My Wonderful name",
+'items':[
+{
+'name':"My store item",
+'price':444.32
+}
+
+]
+}
+
+]
 
 # @app.route("/")
 # def home():
