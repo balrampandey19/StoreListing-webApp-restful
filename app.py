@@ -17,15 +17,15 @@ def get_store(name):
     pass
 
 @app.route("/store")
-def get_store():
+def get_stores():
     pass
 
 @app.route("/store<string:name>/item",method=['POST'])
-def create_store:
+def create_item_in_store:
     pass
 
 @app.route("/store<string:name>/item")
-def get_store(name):
+def get_item_in_store(name):
     pass
 
 
